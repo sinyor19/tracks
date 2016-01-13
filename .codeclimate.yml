@@ -42,11 +42,12 @@ exclude_paths:
 - test/**/*
 - vendor/**/*
 - app/helpers/*
+engines:
   # ... CONFIG CONTENT ...
   brakeman:
     enabled: true
     # ... CONFIG CONTENT ...
     checks:
-      file_access:
+      file_access:send_file(attachment.file.path,
         enabled: false
 # ... CONFIG CONTENT ...
