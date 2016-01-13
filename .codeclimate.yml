@@ -47,7 +47,7 @@ engines:
   brakeman:
     enabled: true
     # ... CONFIG CONTENT ...
-    checks:send_file(attachment.file.path,
+    checks:send_file(attachment.file.path)
       file_access:app/controllers/todos_controller.rb 
         enabled: false
 # ... CONFIG CONTENT ...
