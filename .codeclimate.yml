@@ -42,3 +42,11 @@ exclude_paths:
 - test/**/*
 - vendor/**/*
 - app/helpers/*
+  # ... CONFIG CONTENT ...
+  brakeman:
+    enabled: true
+    # ... CONFIG CONTENT ...
+    checks:
+      file_access:
+        enabled: false
+# ... CONFIG CONTENT ...
